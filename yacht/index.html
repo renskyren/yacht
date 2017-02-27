@@ -14,10 +14,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Include Required Prerequisites -->
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
-    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+
     <!-- Include Date Range Picker -->
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 
     <!-- =======================================================
         Theme Name: Delicious
@@ -365,37 +365,37 @@
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
 
     <script type="text/javascript">
-    $(function() {
-        // $('input[name="daterange"]').daterangepicker();
-        
-        // $('input[name="daterange"]').daterangepicker({
-        //     "showDropdowns": true,
-        //     "minDate": "YYYY/MM/DD",
-        //     // autoUpdateInput: false,
-        //     locale: {
-        //         cancelLabel: 'Clear'
-        //     }
-        // });
+        $(function() {
+            // $('input[name="daterange"]').daterangepicker();
 
-        $('input[name="daterange"]').daterangepicker({
-            autoUpdateInput: false,
-            locale: {
-                cancelLabel: 'Clear'
-            }
-        });
+            // $('input[name="daterange"]').daterangepicker({
+            //     "showDropdowns": true,
+            //     "minDate": "YYYY/MM/DD",
+            //     // autoUpdateInput: false,
+            //     locale: {
+            //         cancelLabel: 'Clear'
+            //     }
+            // });
 
-        $('input[name="daterange"]').on('apply.daterangepicker', function(ev, picker) {
-            $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-        });
+            $('input[name="daterange"]').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: 'Clear'
+                }
+            });
 
-        $('input[name="daterange"]').on('cancel.daterangepicker', function(ev, picker) {
-            $(this).val('');
+            $('input[name="daterange"]').on('apply.daterangepicker', function(ev, picker) {
+                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+            });
+
+            $('input[name="daterange"]').on('cancel.daterangepicker', function(ev, picker) {
+                $(this).val('');
+            });
         });
-    });
     </script>
 
 </body>
