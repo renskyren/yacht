@@ -12,6 +12,13 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Include Required Prerequisites -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+    
+    <!-- Include Date Range Picker -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
     <!-- =======================================================
         Theme Name: Delicious
         Theme URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
@@ -44,7 +51,7 @@
             <div class="container">
                 <div class="row">
                     <div class="inner text-center">
-                        <h1 class="logo-name">遊艇租借</h1>
+                        <h1 class="logo-name">HawkTravel</h1>
                         <h2>享受您的每一次航行</h2>
                         <p>出航交給我，享受留給您</p>
                     </div>
@@ -66,13 +73,13 @@
                     <div class="col-md-6 col-sm-6">
                         <div class="about-info">
                             <h2 class="heading">介紹</h2>
-                            <p>本船通過中國驗船中心(China Registry)基隆港務局(Keelung Harbor Bureau)嚴格檢驗 登記註冊在案，是一艘同時可以在日/夜航行淡水河系(Tamshui River)及沿海地區(Coast) 兩用遊樂艇，為所有乘客提供安全舒適水上活動，竭誠歡迎搭乘或包船(Charter)舉辦 各類活動。
+                            <p>本船通過中國驗船中心(China Registry)澎湖港務局(Keelung Harbor Bureau)嚴格檢驗 登記註冊在案，是一艘同時可以在日/夜航行淡水河系(Tamshui River)及沿海地區(Coast) 兩用遊樂艇，為所有乘客提供安全舒適水上活動，竭誠歡迎搭乘或包船(Charter)舉辦 各類活動。
                             </p>
                             <div class="details-list">
                                 <ul>
                                     <li><i class="fa fa-check"></i>中國驗船中心(China Registry)嚴格檢驗
                                     </li>
-                                    <li><i class="fa fa-check"></i>基隆港務局(Keelung Harbor Bureau)嚴格檢驗
+                                    <li><i class="fa fa-check"></i>澎湖港務局(Keelung Harbor Bureau)嚴格檢驗
                                     </li>
                                 </ul>
                             </div>
@@ -98,18 +105,16 @@
                     <div class="col-md-12" style="padding-bottom:60px;">
                         <div class="item active left">
                             <div class="col-md-6 col-sm-6 left-images">
-                                <img src="img/res02.jpg" class="img-responsive">
+                                <img src="img/res03.jpg" class="img-responsive">
                             </div>
                             <div class="col-md-6 col-sm-6 details-text">
                                 <div class="content-holder">
                                     <h2>跨年Party</h2>
                                     <p>※依各包船專案類別須達50人以上 (人數不足以總價計) ※本專案加贈雞尾酒1缸 BUFFET包含: 銀叉 歐洲進口瓷盤 止滑墊。 由本司精選優質廠商食藝苑廚、愛燴家外燴公司提供 ※本專案客戶可自行搭配相關餐點 表演廠商。相關用餐 表演之安全規定須配合本公司 ※本專案須簽立契約書 訂金30% 登船5日前需結清尾款 ※本專案不得與其它優惠合併 ※本專案不分平、假日</p>
                                     <address>
-                                        <strong>Place: </strong>
-                                        基隆港
+                                        <strong>Place: </strong> 澎湖馬公
                                         <br>
-                                        <strong>Time: </strong>
-                                        07:30pm
+                                        <strong>Time: </strong> 07:30pm
                                     </address>
                                     <!--<a class="btn btn-imfo btn-read-more" href="#">Read more</a>-->
                                 </div>
@@ -285,7 +290,7 @@
                         </div>
                         <div class="col-md-6 col-sm-6 contact-form">
                             <div class="form-group">
-                                <input placeholder="請輸預約日期" class="form-control label-floating is-empty" type="text" onclick="(this.type='date')"  id="date">
+                                <input placeholder="請輸預約日期" class="form-control label-floating is-empty" type="text" name="daterange" id="date">
                                 <!--<input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="請輸入預約日期" data-rule="required" data-msg="This field is required" />-->
                                 <div class="validation"></div>
                             </div>
@@ -296,13 +301,13 @@
                                 <div class="validation"></div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 contact-form">
+                        <!--<div class="col-md-6 col-sm-6 contact-form">
                             <div class="form-group">
                                 <input placeholder="請輸預約時間" class="form-control label-floating is-empty" type="text" onclick="(this.type='time')"  id="time">
-                                <!--<input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="請輸入時間" data-rule="required" data-msg="This field is required" />-->
+                                <input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="請輸入時間" data-rule="required" data-msg="This field is required" />
                                 <div class="validation"></div>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="col-md-6 col-sm-6 contact-form">
                             <div class="form-group">
                                 <input type="text" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="請輸入手機" data-rule="required" data-msg="This field is required" />
@@ -339,13 +344,13 @@
             <div class="row">
                 <div class="col-md-offset-3 col-md-6 text-center">
                     <div class="widget">
-                        <h4 class="widget-title">日租遊艇</h4>
+                        <h4 class="widget-title">Hawktravel</h4>
                         <div class="social-list">
                             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </div>
                         <p class="copyright clear-float">
-                            © 日租遊艇. All Rights Reserved
+                            © Hawktravel. All Rights Reserved
                         </p>
                     </div>
                 </div>
@@ -360,6 +365,38 @@
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+        // $('input[name="daterange"]').daterangepicker();
+        
+        // $('input[name="daterange"]').daterangepicker({
+        //     "showDropdowns": true,
+        //     "minDate": "YYYY/MM/DD",
+        //     // autoUpdateInput: false,
+        //     locale: {
+        //         cancelLabel: 'Clear'
+        //     }
+        // });
+
+        $('input[name="daterange"]').daterangepicker({
+            autoUpdateInput: false,
+            locale: {
+                cancelLabel: 'Clear'
+            }
+        });
+
+        $('input[name="daterange"]').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+        });
+
+        $('input[name="daterange"]').on('cancel.daterangepicker', function(ev, picker) {
+            $(this).val('');
+        });
+    });
+    </script>
 
 </body>
 
